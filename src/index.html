@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/style.css" />
 		<title>E-commerce</title>
 	</head>
 	<body>
@@ -21,174 +22,140 @@
 		</header>
 
 		<main>
-			<section>
+			<section class="section1">
 				<h3 aria-label="new_courses">NEW COURSES</h3>
-				<article
-					style="
-						background-color: antiquewhite;
-						display: flex;
-						margin: 3vh;
-					"
-				>
-					<figure>
-						<img
-							src="https://img.freepik.com/free-vector/react-native-mobile-app-abstract-concept-illustration-cross-platform-native-mobile-app-development-framework-javascript-library-user-interface-operating-system_335657-3350.jpg?w=740&t=st=1706021916~exp=1706022516~hmac=fbede62f5d2b3509265ebbfc9c73ac91129ea1e9a28ea8755d1a795eff4c9819"
-							alt=""
-							style="height: 50vh"
-						/>
-						<figcaption>
-							<h4 role="course_name" aria-label="react">
-								React Course - 169$
-							</h4>
-						</figcaption>
-					</figure>
-					<button style="height: 10vh">
-						<img
-							src="https://www.svgrepo.com/show/533043/cart-shopping.svg"
-							alt=""
-							style="height: 10vh"
-						/>
-					</button>
-				</article>
-				<article
-					style="
-						background-color: antiquewhite;
-						display: flex;
-						margin: 3vh;
-					"
-				>
-					<figure>
-						<img
-							src="https://img.freepik.com/free-vector/javascript-abstract-concept-illustration_335657-3702.jpg?w=740&t=st=1706022051~exp=1706022651~hmac=0269f71260d879f49d52f4aa29cb3d1c62e974f021d1fd2db749a134062be455"
-							alt=""
-							style="height: 50vh"
-						/>
-						<figcaption>
-							<h4 role="course_name" aria-label="javascript">
-								JavaScript Course - 200$
-							</h4>
-						</figcaption>
-					</figure>
-					<button style="height: 10vh">
-						<img
-							src="https://www.svgrepo.com/show/533043/cart-shopping.svg"
-							alt=""
-							style="height: 10vh"
-						/>
-					</button>
-				</article>
-				<article
-					style="
-						background-color: antiquewhite;
-						display: flex;
-						margin: 3vh;
-					"
-				>
-					<figure>
-						<img
-							src="https://img.freepik.com/free-vector/cloud-computing-security-abstract-concept-illustration_335657-2105.jpg?w=740&t=st=1706022159~exp=1706022759~hmac=4464a719dec8c336268878a7989619786e1af2c9c14fc6b52a85357a2ae70131"
-							alt=""
-							style="height: 50vh"
-						/>
-						<figcaption>
-							<h4 role="course_name" aria-label="cyber security">
-								Cyber Security Course - 99$
-							</h4>
-						</figcaption>
-					</figure>
-					<button style="height: 10vh">
-						<img
-							src="https://www.svgrepo.com/show/533043/cart-shopping.svg"
-							alt=""
-							style="height: 10vh"
-						/>
-					</button>
-				</article>
+				<menu aria-label="courses-list">
+					<article>
+						<figure>
+							<img
+								src="https://img.freepik.com/free-vector/react-native-mobile-app-abstract-concept-illustration-cross-platform-native-mobile-app-development-framework-javascript-library-user-interface-operating-system_335657-3350.jpg?w=740&t=st=1706021916~exp=1706022516~hmac=fbede62f5d2b3509265ebbfc9c73ac91129ea1e9a28ea8755d1a795eff4c9819"
+								alt=""
+							/>
+							<figcaption>
+								<h4 role="course_name" aria-label="react">
+									React Course - 169$
+								</h4>
+							</figcaption>
+						</figure>
+						<button>
+							<img
+								src="https://www.svgrepo.com/show/533043/cart-shopping.svg"
+								alt=""
+							/>
+						</button>
+					</article>
+					<article>
+						<figure>
+							<img
+								src="https://img.freepik.com/free-vector/javascript-abstract-concept-illustration_335657-3702.jpg?w=740&t=st=1706022051~exp=1706022651~hmac=0269f71260d879f49d52f4aa29cb3d1c62e974f021d1fd2db749a134062be455"
+								alt=""
+							/>
+							<figcaption>
+								<h4 role="course_name" aria-label="javascript">
+									JavaScript Course - 200$
+								</h4>
+							</figcaption>
+						</figure>
+						<button>
+							<img
+								src="https://www.svgrepo.com/show/533043/cart-shopping.svg"
+								alt=""
+							/>
+						</button>
+					</article>
+					<article>
+						<figure>
+							<img
+								src="https://img.freepik.com/free-vector/cloud-computing-security-abstract-concept-illustration_335657-2105.jpg?w=740&t=st=1706022159~exp=1706022759~hmac=4464a719dec8c336268878a7989619786e1af2c9c14fc6b52a85357a2ae70131"
+								alt=""
+							/>
+							<figcaption>
+								<h4
+									role="course_name"
+									aria-label="cyber security"
+								>
+									Cyber Security Course - 99$
+								</h4>
+							</figcaption>
+						</figure>
+						<button>
+							<img
+								src="https://www.svgrepo.com/show/533043/cart-shopping.svg"
+								alt=""
+							/>
+						</button>
+					</article>
+				</menu>
 			</section>
 
-			<section>
+			<section class="section2">
 				<h3 aria-label="courses_on_sale">COURSES ON-SALE</h3>
-				<article
-					style="
-						background-color: aliceblue;
-						display: flex;
-						margin: 3vh;
-					"
-				>
-					<figure>
-						<img
-							src="https://img.freepik.com/free-vector/electronic-document-electronic-paper-paperless-office-internet-article-online-documentation-organization-typing-text-file-computer-vector-isolated-concept-metaphor-illustration_335657-2745.jpg?w=740&t=st=1706022904~exp=1706023504~hmac=a5b8b773f7dbf8758aff1bbdba7d1efc8d0a8c7c300e83f692cb631ac8db377a"
-							alt=""
-							style="height: 50vh"
-						/>
-						<figcaption>
-							<h4 role="course_name" aria-label="angular">
-								Angular Course - <del>99$</del> 69$
-							</h4>
-						</figcaption>
-					</figure>
-					<button style="height: 10vh">
-						<img
-							src="https://www.svgrepo.com/show/533043/cart-shopping.svg"
-							alt=""
-							style="height: 10vh"
-						/>
-					</button>
-				</article>
-				<article
-					style="
-						background-color: aliceblue;
-						display: flex;
-						margin: 3vh;
-					"
-				>
-					<figure>
-						<img
-							src="https://img.freepik.com/free-vector/transactional-marketing-abstract-concept_335657-3068.jpg?w=740&t=st=1706023089~exp=1706023689~hmac=5a6258c67cd6a57849becf6a20aebbdedebaf17357bc387ccebdd7ce425d4c70"
-							alt=""
-							style="height: 50vh"
-						/>
-						<figcaption>
-							<h4 role="course_name" aria-label="crypto currency">
-								Crypto Currency Course - <del>259$</del> 179$
-							</h4>
-						</figcaption>
-					</figure>
-					<button style="height: 10vh">
-						<img
-							src="https://www.svgrepo.com/show/533043/cart-shopping.svg"
-							alt=""
-							style="height: 10vh"
-						/>
-					</button>
-				</article>
-				<article
-					style="
-						background-color: aliceblue;
-						display: flex;
-						margin: 3vh;
-					"
-				>
-					<figure>
-						<img
-							src="https://img.freepik.com/free-vector/internet-lessons-searching-remote-university-educational-programs-online-classes-website-high-school-student-with-magnifying-glass-cartoon-character_335657-3269.jpg?w=740&t=st=1706023139~exp=1706023739~hmac=85bb1c61f4d8a4195294feda8d7d405901a31d0deb01ef6c7b0c9e56c9636246"
-							alt=""
-							style="height: 50vh"
-						/>
-						<figcaption>
-							<h4 role="course_name" aria-label="media manager">
-								Media Manager Course - <del>89$</del> 59$
-							</h4>
-						</figcaption>
-					</figure>
-					<button style="height: 10vh">
-						<img
-							src="https://www.svgrepo.com/show/533043/cart-shopping.svg"
-							alt=""
-							style="height: 10vh"
-						/>
-					</button>
-				</article>
+				<menu aria-label="courses-list">
+					<article>
+						<figure>
+							<img
+								src="https://img.freepik.com/free-vector/electronic-document-electronic-paper-paperless-office-internet-article-online-documentation-organization-typing-text-file-computer-vector-isolated-concept-metaphor-illustration_335657-2745.jpg?w=740&t=st=1706022904~exp=1706023504~hmac=a5b8b773f7dbf8758aff1bbdba7d1efc8d0a8c7c300e83f692cb631ac8db377a"
+								alt=""
+							/>
+							<figcaption>
+								<h4 role="course_name" aria-label="angular">
+									Angular Course - <del>99$</del> 69$
+								</h4>
+							</figcaption>
+						</figure>
+						<button>
+							<img
+								src="https://www.svgrepo.com/show/533043/cart-shopping.svg"
+								alt=""
+							/>
+						</button>
+					</article>
+					<article>
+						<figure>
+							<img
+								src="https://img.freepik.com/free-vector/transactional-marketing-abstract-concept_335657-3068.jpg?w=740&t=st=1706023089~exp=1706023689~hmac=5a6258c67cd6a57849becf6a20aebbdedebaf17357bc387ccebdd7ce425d4c70"
+								alt=""
+							/>
+							<figcaption>
+								<h4
+									role="course_name"
+									aria-label="crypto currency"
+								>
+									Crypto Currency Course -
+									<del>259$</del> 179$
+								</h4>
+							</figcaption>
+						</figure>
+						<button>
+							<img
+								src="https://www.svgrepo.com/show/533043/cart-shopping.svg"
+								alt=""
+							/>
+						</button>
+					</article>
+					<article>
+						<figure>
+							<img
+								src="https://img.freepik.com/free-vector/internet-lessons-searching-remote-university-educational-programs-online-classes-website-high-school-student-with-magnifying-glass-cartoon-character_335657-3269.jpg?w=740&t=st=1706023139~exp=1706023739~hmac=85bb1c61f4d8a4195294feda8d7d405901a31d0deb01ef6c7b0c9e56c9636246"
+								alt=""
+							/>
+							<figcaption>
+								<h4
+									role="course_name"
+									aria-label="media manager"
+								>
+									Media Manager Course - <del>89$</del> 59$
+								</h4>
+							</figcaption>
+						</figure>
+						<button>
+							<img
+								src="https://www.svgrepo.com/show/533043/cart-shopping.svg"
+								alt=""
+							/>
+						</button>
+					</article>
+				</menu>
 			</section>
 		</main>
 
