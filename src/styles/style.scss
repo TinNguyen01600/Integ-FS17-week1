@@ -1,4 +1,6 @@
 // scss code here
+@use "./mixins";
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -6,7 +8,7 @@
 }
 
 header {
-	display: flex;
+	@include mixins.flexCenter(row);
 	justify-content: space-between;
 	h1 {
 		margin: 2vh 5vw;
@@ -14,24 +16,21 @@ header {
 	nav {
 		margin: 2vh 5vw;
 		ul {
-			display: flex;
+			@include mixins.flexCenter(row);
 			list-style-type: none;
 			gap: 2vw;
-            li {
-                &:hover{ 
-                    color: red;
-                    cursor: pointer;
-                    font-size: 3vh;
-                }
-            }
+			li {
+				&:hover {
+					color: red;
+					cursor: pointer;
+				}
+			}
 		}
 	}
 }
 
 section {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@include mixins.flexCenter(column);
 	margin-bottom: 5vh;
 	h3 {
 		overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -46,25 +45,24 @@ section {
 	menu {
 		display: flex;
 		article {
-			display: flex;
-			align-items: center;
+			@include mixins.flexCenter(row);
 			margin: 3vh;
 			figure {
 				img {
 					height: 40vh;
 				}
-                figcaption {
-                    font-size: 3vh;
-                    span {
-                        color: red;
-                    }
-                }
+				figcaption {
+					font-size: 3vh;
+					span {
+						color: red;
+					}
+				}
 			}
 			button {
 				height: 6vh;
-                &:hover {
-                    background-color: beige;
-                }
+				&:hover {
+					background-color: beige;
+				}
 				img {
 					height: 6vh;
 				}
@@ -74,15 +72,15 @@ section {
 }
 
 .section1 {
-    background-color: aliceblue;
+	background-color: aliceblue;
 }
 
 .section2 {
-    background-color: antiquewhite;
+	background-color: antiquewhite;
 }
 
 footer {
-	display: flex;
+    @include mixins.flexCenter(row);
 	justify-content: space-around;
 	padding: 2vh;
 	background: black;

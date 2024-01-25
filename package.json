@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "andrea <ngocanhhsgs@gmail.com>",
   "license": "MIT",
+  "dependencies": {
+    "sass": "^1.70.0"
+  },
   "scripts": {
     "compile": "sass src/styles/style.scss:src/style.css",
     "compile:watch": "sass --watch src/styles/style.scss:src/style.css"
