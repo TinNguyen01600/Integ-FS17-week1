@@ -30,7 +30,111 @@ header nav ul li:hover {
   cursor: pointer;
 }
 
+@media (min-width: 360px) {
+  section menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  section menu article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3vh;
+  }
+  section menu article figcaption h4 {
+    text-align: center;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  footer .helpers ul {
+    grid-template-columns: repeat(2, 20vw);
+    gap: 1vh;
+  }
+}
+@media (min-width: 660px) {
+  section menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  section menu article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1vw;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  footer .helpers ul {
+    grid-template-columns: repeat(2, 15vw);
+    gap: 2vh;
+  }
+}
+@media (min-width: 740px) {
+  section menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  section menu article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2vw;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  footer .helpers ul {
+    grid-template-columns: repeat(2, 15vw);
+    gap: 2vh;
+  }
+}
+@media (min-width: 1000px) {
+  section menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  section menu article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  footer .helpers ul {
+    grid-template-columns: repeat(2, 15vw);
+    gap: 2vh;
+  }
+}
 section {
+  padding: 2vh 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,23 +142,11 @@ section {
   margin-bottom: 5vh;
 }
 section h3 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid black; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  letter-spacing: 0.15em;
   font-size: 4vh;
 }
 section menu {
-  display: flex;
-}
-section menu article {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin: 3vh;
+  width: 100%;
 }
 section menu article figure img {
   height: 40vh;
@@ -84,37 +176,12 @@ section menu article button img {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
   justify-content: space-around;
   padding: 2vh;
   background: black;
   color: white;
 }
-footer .helpers ul {
+footer ul {
   display: grid;
-  grid-template-columns: repeat(2, 10vw);
   list-style-type: none;
-  gap: 1vh;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 50%;
-  }
-}
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: black;
-  }
 }/*# sourceMappingURL=style.css.map */

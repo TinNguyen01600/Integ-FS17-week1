@@ -1,6 +1,32 @@
+@use './variables';
+
 @mixin flexCenter($direction) {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: $direction;
+}
+
+@mixin responsive-sm {
+    @media (min-width: variables.$small-screen) {
+        @content;
+    }
+}
+
+@mixin responsive-md {
+    @media (min-width: variables.$medium-screen) {
+        @content;
+    }
+}
+
+@mixin responsive-lg {
+    @media (min-width: variables.$large-screen) {
+        @content;
+    }
+}
+
+@mixin responsive-xl {
+    @media (min-width: variables.$xl-screen) {
+        @content;
+    }
 }
