@@ -1,33 +1,58 @@
-# Week 1 Assignment
+# E-Commerce Course Web Page
 
 This assignment aims to practice HTML, CSS and SASS
 
-## Requirement
+## Table of content
 
-Create an e-commerce website
+[General Description](#general-description)
 
-1. Git/GitHub
+[Technologies](#technologies)
 
-- create a simple `README` file to introduce yourself
-- submit the assignment by open a pull request (PR)
-- make the repository public
-- add label to your PR
+[Project Structure](#project-structure)
 
-2. HTML and Accessibility
+[Instruction](#instruction)
 
-- Make use of different tags: headings, paragraphs, link, italic, ordered list, unordered list,table, form
-- Check out more tags that might be helpful: address, section, article, audio
+## General Description
 
-3. CSS
+> Frontend project for week 1 in Integrify Academy. This is simple website for course purchasing (similar to Udemy), using HTML, CSS and SCSS. 
+>
+> Mixins, variables and responsive design were also implemented for better user interface and experience.
 
-- add styling to the HTML file using Flexbox and Grid
-- add basic animation (hover effect, active link styles, typing effect)
-- the web page does not need to be fully responsive, but at least you should have responsive scaling for Flexbox and Grid system.
+## Technology
 
-4. SASS
+-   HTML 
+-   CSS
+-   SCSS
 
-- apply SAAS to current project. Make sure to at least use variables and mixins
+## Project Structure
 
-5. Other
-   - Deploy the project
-   - Write a readme file to describe your project with few more details
+[src](./src)
+* [styles/](./src/styles)
+  * [style.css](./src/styles/style.css)
+  * [style.css.map](./src/styles/style.css.map)
+  * [style.scss](./src/styles/style.scss)
+  * [_mixins.scss](./src/styles/_mixins.scss)
+  * [_variables.scss](./src/styles/_variables.scss)
+* [index.html](./src/index.html)
+
+## Instruction
+
+1. Open your terminal and clone the repository with the following command:
+
+```
+git clone https://github.com/TinNguyen01600/Integ-FS17-week1
+```
+
+2. Install all the packages:
+
+```
+npm install
+```
+
+3. Start the application in your local machine:
+```
+start src/index.html
+```
+
+
+\*\* Or simply access the deployed version (https://tinnguyen01600.github.io/Integ-FS17-week1/src/index.html).
