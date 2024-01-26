@@ -20,7 +20,16 @@
 		</header>
 
 		<main>
-			<section class="section1">
+			<section class="section1" aria-label="search_box">
+				<input
+					type="text"
+					id="courseName"
+					name="courseName"
+					placeholder="Search for anything"
+				/>
+			</section>
+
+			<section class="section2" aria-label="new_courses">
 				<h3 aria-label="new_courses">NEW COURSES</h3>
 				<menu aria-label="courses-list">
 					<article>
@@ -86,7 +95,7 @@
 				</menu>
 			</section>
 
-			<section class="section2">
+			<section class="section3" aria-label="courses_on_sale">
 				<h3 aria-label="courses_on_sale">COURSES ON-SALE</h3>
 				<menu aria-label="courses-list">
 					<article>
@@ -157,19 +166,129 @@
 					</article>
 				</menu>
 			</section>
+
+			<section class="section4" aria-label="top_categories">
+				<h3 aria-label="top_categories">TOP CATEGORIES</h3>
+				<menu aria-label="categories_list">
+					<figure>
+						<img
+							src="https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg"
+							alt="Category - Development"
+						/>
+						<figcaption>
+							<h4 role="category-name" aria-label="development">
+								Development
+							</h4>
+						</figcaption>
+					</figure>
+                    <figure>
+						<img
+							src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg"
+							alt="Category - Design"
+						/>
+						<figcaption>
+							<h4 role="category-name" aria-label="Design">
+								Design
+							</h4>
+						</figcaption>
+					</figure>
+                    <figure>
+						<img
+							src="https://s.udemycdn.com/home/top-categories/lohp-category-marketing-v2.jpg"
+							alt="Category - Marketing"
+						/>
+						<figcaption>
+							<h4 role="category-name" aria-label="Marketing">
+								Marketing
+							</h4>
+						</figcaption>
+					</figure>
+                    <figure>
+						<img
+							src="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-v2.jpg"
+							alt="Category - IT and Software"
+						/>
+						<figcaption>
+							<h4 role="category-name" aria-label="IT and Software">
+								IT and Software
+							</h4>
+						</figcaption>
+					</figure>
+                    <figure>
+						<img
+							src="https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-v2.jpg"
+							alt="Category - Personal Development"
+						/>
+						<figcaption>
+							<h4 role="category-name" aria-label="personal_development">
+								Personal Development
+							</h4>
+						</figcaption>
+					</figure>
+                    <figure>
+						<img
+							src="https://s.udemycdn.com/home/top-categories/lohp-category-business-v2.jpg"
+							alt="Category - Business"
+						/>
+						<figcaption>
+							<h4 role="category-name" aria-label="Business">
+								Business
+							</h4>
+						</figcaption>
+					</figure>
+                    <figure>
+						<img
+							src="https://s.udemycdn.com/home/top-categories/lohp-category-photography-v2.jpg"
+							alt="Category - Photography"
+						/>
+						<figcaption>
+							<h4 role="category-name" aria-label="Photography">
+								Photography
+							</h4>
+						</figcaption>
+					</figure>
+                    <figure>
+						<img
+							src="https://s.udemycdn.com/home/top-categories/lohp-category-music-v2.jpg"
+							alt="Category - Music"
+						/>
+						<figcaption>
+							<h4 role="category-name" aria-label="Music">
+								Music
+							</h4>
+						</figcaption>
+					</figure>
+				</menu>
+			</section>
 		</main>
 
 		<footer>
 			<section class="helpers">
-				<ul role="list">
-					<li role="listitem">About Us</li>
-					<li role="listitem">Contact</li>
-					<li role="listitem">Customers</li>
-					<li role="listitem">Media</li>
-					<li role="listitem">Products</li>
-					<li role="listitem">News and Events</li>
-					<li role="listitem">Insights</li>
-					<li role="listitem">Privacy Policy</li>
+				<ul role="links-list">
+					<li role="link-item">
+						<a href="#">About Us</a>
+					</li>
+					<li role="link-item">
+						<a href="#">Contact</a>
+					</li>
+					<li role="link-item">
+						<a href="#">Customers</a>
+					</li>
+					<li role="link-item">
+						<a href="#">Media</a>
+					</li>
+					<li role="link-item">
+						<a href="#">Products</a>
+					</li>
+					<li role="link-item">
+						<a href="#">News and Events</a>
+					</li>
+					<li role="link-item">
+						<a href="#">Insights</a>
+					</li>
+					<li role="link-item">
+						<a href="#">Privacy Policy</a>
+					</li>
 				</ul>
 			</section>
 			<div class="copyright">&copy; Copyright</div>

@@ -30,21 +30,41 @@ header nav ul li:hover {
   cursor: pointer;
 }
 
+section {
+  margin-bottom: 5vh;
+}
+
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.section1 input {
+  padding: 0 1vw;
+  border-radius: 10px;
+  width: 50vw;
+  height: 5vh;
+}
+
 @media (min-width: 360px) {
-  section menu {
+  .section2 menu,
+  .section3 menu {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  section menu article {
+  .section2 menu article,
+  .section3 menu article {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 3vh;
   }
-  section menu article figcaption h4 {
+  .section2 menu article figcaption h4,
+  .section3 menu article figcaption h4 {
     text-align: center;
   }
   footer {
@@ -59,18 +79,23 @@ header nav ul li:hover {
   }
 }
 @media (min-width: 660px) {
-  section menu {
+  .section2 menu,
+  .section3 menu {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
   }
-  section menu article {
+  .section2 menu article,
+  .section3 menu article {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     gap: 1vw;
+  }
+  .section4 menu {
+    grid-template-columns: repeat(4, 20vw);
   }
   footer {
     display: flex;
@@ -84,19 +109,24 @@ header nav ul li:hover {
   }
 }
 @media (min-width: 740px) {
-  section menu {
+  .section2 menu,
+  .section3 menu {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  section menu article {
+  .section2 menu article,
+  .section3 menu article {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     gap: 2vw;
+  }
+  .section4 menu {
+    grid-template-columns: repeat(2, 45vw);
   }
   footer {
     display: flex;
@@ -110,13 +140,15 @@ header nav ul li:hover {
   }
 }
 @media (min-width: 1000px) {
-  section menu {
+  .section2 menu,
+  .section3 menu {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
   }
-  section menu article {
+  .section2 menu article,
+  .section3 menu article {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,47 +164,83 @@ header nav ul li:hover {
     grid-template-columns: repeat(2, 15vw);
     gap: 2vh;
   }
+  .section4 menu {
+    grid-template-columns: repeat(4, 23vw);
+  }
 }
-section {
+.section2,
+.section3 {
   padding: 2vh 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 5vh;
 }
-section h3 {
+.section2 h3,
+.section3 h3 {
   letter-spacing: 0.15em;
   font-size: 4vh;
 }
-section menu {
+.section2 menu,
+.section3 menu {
   width: 100%;
 }
-section menu article figure img {
+.section2 menu article figure img,
+.section3 menu article figure img {
   height: 40vh;
 }
-section menu article figure figcaption {
+.section2 menu article figure figcaption,
+.section3 menu article figure figcaption {
   font-size: 3vh;
 }
-section menu article figure figcaption span {
+.section2 menu article figure figcaption span,
+.section3 menu article figure figcaption span {
   color: red;
 }
-section menu article button {
+.section2 menu article button,
+.section3 menu article button {
   height: 6vh;
 }
-section menu article button:hover {
+.section2 menu article button:hover,
+.section3 menu article button:hover {
   background-color: beige;
 }
-section menu article button img {
+.section2 menu article button img,
+.section3 menu article button img {
   height: 6vh;
-}
-
-.section1 {
-  background-color: aliceblue;
 }
 
 .section2 {
+  background-color: aliceblue;
+}
+
+.section3 {
   background-color: antiquewhite;
+}
+
+.section4 {
+  padding: 2vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3vh;
+}
+.section4 h3 {
+  letter-spacing: 0.15em;
+  font-size: 4vh;
+}
+.section4 menu {
+  display: grid;
+  justify-items: center;
+  row-gap: 2vh;
+}
+.section4 menu img {
+  height: 35vh;
+}
+.section4 menu img:hover {
+  scale: 1.05;
+  cursor: pointer;
 }
 
 footer {
@@ -184,4 +252,11 @@ footer {
 footer ul {
   display: grid;
   list-style-type: none;
+}
+footer ul a {
+  color: white;
+  text-decoration: none;
+}
+footer ul a:hover {
+  border-bottom: 1px solid white;
 }/*# sourceMappingURL=style.css.map */

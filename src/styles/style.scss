@@ -29,8 +29,24 @@ header {
 	}
 }
 
+section {
+	margin-bottom: 5vh;
+}
+
+.section1 {
+	// border: 2px solid black;
+	@include mixins.flexCenter(row);
+	input {
+		padding: 0 1vw;
+		border-radius: 10px;
+		width: 50vw;
+		height: 5vh;
+	}
+}
+
 @include mixins.responsive-sm {
-	section {
+	.section2,
+	.section3 {
 		menu {
 			@include mixins.flexCenter(column);
 			article {
@@ -53,13 +69,19 @@ header {
 	}
 }
 @include mixins.responsive-md {
-	section {
+	.section2,
+	.section3 {
 		menu {
 			@include mixins.flexCenter(row);
 			article {
 				@include mixins.flexCenter(row);
-                gap: 1vw;
+				gap: 1vw;
 			}
+		}
+	}
+	.section4 {
+		menu {
+			grid-template-columns: repeat(4, 20vw);
 		}
 	}
 	footer {
@@ -73,14 +95,20 @@ header {
 	}
 }
 @include mixins.responsive-lg {
-	section {
+	.section2,
+	.section3 {
 		menu {
 			@include mixins.flexCenter(column);
 			article {
-                width: 100%;
+				width: 100%;
 				@include mixins.flexCenter(row);
-                gap: 2vw;
+				gap: 2vw;
 			}
+		}
+	}
+	.section4 {
+		menu {
+			grid-template-columns: repeat(2, 45vw);
 		}
 	}
 	footer {
@@ -93,9 +121,9 @@ header {
 		}
 	}
 }
-
 @include mixins.responsive-xl {
-	section {
+	.section2,
+	.section3 {
 		menu {
 			@include mixins.flexCenter(row);
 			article {
@@ -112,18 +140,23 @@ header {
 			}
 		}
 	}
+	.section4 {
+		menu {
+			grid-template-columns: repeat(4, 23vw);
+		}
+	}
 }
 
-section {
+.section2,
+.section3 {
 	padding: 2vh 0;
 	@include mixins.flexCenter(column);
-	margin-bottom: 5vh;
 	h3 {
 		letter-spacing: 0.15em;
 		font-size: 4vh;
 	}
 	menu {
-        width: 100%;
+		width: 100%;
 		article {
 			figure {
 				img {
@@ -149,12 +182,34 @@ section {
 	}
 }
 
-.section1 {
+.section2 {
 	background-color: aliceblue;
 }
 
-.section2 {
+.section3 {
 	background-color: antiquewhite;
+}
+
+.section4 {
+	padding: 2vh 0;
+	@include mixins.flexCenter(column);
+	gap: 3vh;
+	h3 {
+		letter-spacing: 0.15em;
+		font-size: 4vh;
+	}
+	menu {
+		display: grid;
+        justify-items: center;
+		row-gap: 2vh;
+		img {
+			height: 35vh;
+			&:hover {
+				scale: 1.05;
+				cursor: pointer;
+			}
+		}
+	}
 }
 
 footer {
@@ -165,5 +220,12 @@ footer {
 	ul {
 		display: grid;
 		list-style-type: none;
+		a {
+			color: white;
+			text-decoration: none;
+			&:hover {
+				border-bottom: 1px solid white;
+			}
+		}
 	}
 }
